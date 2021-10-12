@@ -52,7 +52,7 @@
 
 // const value = [5, 'qwe', false, -10, 0.5];
 
-// for(let i = 0; i < value.length; i++) {
+// for(let i = 0; i < value.length; i=i+2) {
 //     console.log(value[i]);
 // }
 
@@ -198,19 +198,22 @@
 // Задать массив слов. Например:
 
 // let vegetables = ["морковь", "баклажан", "репа", "топинамбур"];
+// let newVegetables = [];
 
-
+// for (let item of vegetables){
+//     newVegetables.push({'word': item, 'length': item.length});
+// }
+// console.log(newVegetables);
 
 // 1) В цикле сформировать массив объектов с ключами word (само слово), length (длина слова). Вывести этот массив в консоль.
-// let vegetables = [
-//     { word: 'морковь' }, { word: 'баклажан' }, { word: 'репа' }, { word: 'топинамбур' }
-// ];
+
+
 
 // console.log(vegetables);
 // Подсказка: длину строки можно определить с помощью метода .length. Например, для переменной let string = 'text' это будет string.length (результат - 4, т.к. слово text состоит из 4 символов)
 
 // 2) Пройтись по полученному массиву объектов и вывести в консоль строки вида "слово - длина_слова", например "картошка - 8"
 
-// for (let i = 0; i < vegetables.length; i++) {
-//     console.log(`Слова ${vegetables[i].word} длина слова ${vegetables[i].word.length}`)
+// for (let i = 0; i < newVegetables.length; i++) {
+//     console.log(`Слова ${newVegetables[i].word} длина слова ${newVegetables[i].length}`)
 // };
